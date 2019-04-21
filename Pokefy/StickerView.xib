@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ImageEditorViewController" customModule="Hell_Sticker" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="180" height="180"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QcJ-0p-AMe"/>
+                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BCf-rf-eF3">
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="BCf-rf-eF3" secondAttribute="height" multiplier="1:1" id="wfq-SV-ggj"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="resize"/>
+                </button>
+                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UYb-7l-g1O">
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="UYb-7l-g1O" secondAttribute="height" multiplier="1:1" id="W9f-Dh-sdQ"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="cross"/>
+                </button>
+                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P7C-pK-8Q2">
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="P7C-pK-8Q2" secondAttribute="height" multiplier="1:1" id="3Pf-qP-E2f"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="rotate"/>
+                </button>
+                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aCG-if-gdC">
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="aCG-if-gdC" secondAttribute="height" multiplier="1:1" id="dmZ-gn-Eel"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="mirror"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="UYb-7l-g1O" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.15" id="4EU-Ef-fpq"/>
+                <constraint firstItem="BCf-rf-eF3" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.15" id="4om-9p-krp"/>
+                <constraint firstItem="UYb-7l-g1O" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="7LB-cB-WjE"/>
+                <constraint firstItem="QcJ-0p-AMe" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.9" id="CVT-3L-3Qj"/>
+                <constraint firstItem="P7C-pK-8Q2" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.15" id="GQV-eS-lCo"/>
+                <constraint firstAttribute="bottom" secondItem="aCG-if-gdC" secondAttribute="bottom" id="KnP-J6-2Ea"/>
+                <constraint firstAttribute="bottom" secondItem="BCf-rf-eF3" secondAttribute="bottom" id="LNz-fa-1Se"/>
+                <constraint firstItem="QcJ-0p-AMe" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="NO7-cI-Qje"/>
+                <constraint firstItem="P7C-pK-8Q2" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Sy6-hk-D14"/>
+                <constraint firstAttribute="trailing" secondItem="BCf-rf-eF3" secondAttribute="trailing" id="aLk-bH-fqI"/>
+                <constraint firstItem="aCG-if-gdC" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="d68-mT-puY"/>
+                <constraint firstItem="aCG-if-gdC" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.15" id="dpj-q5-CBI"/>
+                <constraint firstItem="UYb-7l-g1O" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="eLO-Uu-cAT"/>
+                <constraint firstAttribute="trailing" secondItem="P7C-pK-8Q2" secondAttribute="trailing" id="gjc-1k-nqy"/>
+                <constraint firstItem="QcJ-0p-AMe" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="nnJ-oJ-gvC"/>
+                <constraint firstItem="QcJ-0p-AMe" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.9" id="oU1-H0-XPF"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-50" y="-205"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="cross" width="50" height="50"/>
+        <image name="mirror" width="50" height="50"/>
+        <image name="resize" width="50" height="50"/>
+        <image name="rotate" width="50" height="50"/>
+    </resources>
+</document>
